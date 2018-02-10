@@ -30,5 +30,5 @@ for i in range(20):
         h1_list.append(parse.unquote(sub_url[6:]))
     else:
         his.pop()
-    print(his)
-    print(h1_list)
+print(his)
+print(h1_list)
