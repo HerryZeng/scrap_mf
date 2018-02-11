@@ -3,8 +3,8 @@ import re
 import ssl
 from urllib import parse
 from urllib.request import urlopen
-
 from bs4 import BeautifulSoup
+from logging import config
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -30,5 +30,7 @@ for i in range(20):
         h1_list.append(parse.unquote(sub_url[6:]))
     else:
         his.pop()
-print(his)
-print(h1_list)
+# print(his)
+# print(h1_list)
+config.fileConfig('log_settings')
+
