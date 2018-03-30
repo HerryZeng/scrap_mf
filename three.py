@@ -32,5 +32,5 @@ for i in range(20):
         his.pop()
 # print(his)
 # print(h1_list)
-config.fileConfig('log_settings')
+# config.fileConfig('log_settings')
 

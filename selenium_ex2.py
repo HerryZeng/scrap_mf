@@ -1,5 +1,6 @@
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
+import time
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
@@ -14,7 +15,7 @@ driver.find_element_by_link_text(u"Git 版本管理").click()
 driver.find_element_by_link_text(u"大家说").click()
 
 html = driver.page_source
-
+time.sleep(10)
 driver.get_screenshot_as_file("image/screenshot2.png")
 driver.close()
 print(html[:200])
